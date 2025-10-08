@@ -1,0 +1,18 @@
+plugins {
+    //id 'groovy'
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+        // Playwright Java
+        implementation 'com.microsoft.playwright:playwright:1.48.0'
+        implementation 'org.testng:testng:7.10.2'
+    }
+
+test {
+    useTestNG()
+}
